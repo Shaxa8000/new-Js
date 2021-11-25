@@ -43,7 +43,7 @@
 //getting last element of array
 
 // const getFirst = (input) => {
-//   return input[input.length-1];
+//   return input[0];
 // };
 
 // console.log(getFirst([2, 1, 4, 5]));
@@ -51,7 +51,7 @@
 
 // console.log(getFirst([[1, 2, 3], 2, 1, 4, 5]));
 
-//array to string
+// //array to string
 
 // const myColor = ['Red', 'Green', 'White', 'Black'];
 
@@ -100,44 +100,106 @@
 
 // day and hour
 
-var today = new Date();
-var day = today.getDay();
-var daylist = [
-  'Sunday',
-  'Monday',
-  'Tuesday',
-  'Wednesday ',
-  'Thursday',
-  'Friday',
-  'Saturday',
-];
-console.log('Today is : ' + daylist[day] + '.');
-var hour = today.getHours();
-var minute = today.getMinutes();
-var second = today.getSeconds();
-var prepand = hour >= 12 ? ' PM ' : ' AM ';
-hour = hour >= 12 ? hour - 12 : hour;
-if (hour === 0 && prepand === ' PM ') {
-  if (minute === 0 && second === 0) {
-    hour = 12;
-    prepand = ' Noon';
-  } else {
-    hour = 12;
-    prepand = ' PM';
-  }
-}
-if (hour === 0 && prepand === ' AM ') {
-  if (minute === 0 && second === 0) {
-    hour = 12;
-    prepand = ' Midnight';
-  } else {
-    hour = 12;
-    prepand = ' AM';
-  }
-}
-console.log(
-  'Current Time : ' + hour + prepand + ' : ' + minute + ' : ' + second
-);
+// var today = new Date();
+// var day = today.getDay();
+// var daylist = [
+//   'Sunday',
+//   'Monday',
+//   'Tuesday',
+//   'Wednesday ',
+//   'Thursday',
+//   'Friday',
+//   'Saturday',
+// ];
+// console.log('Today is : ' + daylist[day] + '.');
+// var hour = today.getHours();
+// var minute = today.getMinutes();
+// var second = today.getSeconds();
+// var prepand = hour >= 12 ? ' PM ' : ' AM ';
+// hour = hour >= 12 ? hour - 12 : hour;
+// if (hour === 0 && prepand === ' PM ') {
+//   if (minute === 0 && second === 0) {
+//     hour = 12;
+//     prepand = ' Noon';
+//   } else {
+//     hour = 12;
+//     prepand = ' PM';
+//   }
+// }
+// if (hour === 0 && prepand === ' AM ') {
+//   if (minute === 0 && second === 0) {
+//     hour = 12;
+//     prepand = ' Midnight';
+//   } else {
+//     hour = 12;
+//     prepand = ' AM';
+//   }
+// }
+// console.log(
+//   'Current Time : ' + hour + prepand + ' : ' + minute + ' : ' + second
+// );
+
+// ARRAYS
+
+// const colors = ['Black', 'Green', 'Yellow', 'Red', 'Pink'];
 
 
+// const arr = (input) => {
+//     return input[0]
+// }
+
+// console.log(arr(colors))
+
+
+// colors.pop();
+// console.log(colors.length);
+// console.log(colors);
+
+// for (let i = 0; i < colors.length; i++) {
+//     console.log(i, colors[i]);
+// }
+
+
+//objects
+
+// const person = {
+//     name: 'John',
+//     surname: 'Doe',
+//     id: 2424,
+//     status: 'Student',
+//     chirp: function() {
+//         console.log('CHIRP CHIRP')
+//     },
+//     sayHello: function () {
+//         console.log(this.name + this.surname);
+//     }
+
+// }
+
+// for (key in person) {
+//     console.log(person.chirp[key])
+// }
+
+//class 
+
+class Student {
+    constructor(title) {
+        this.title = title;
+        console.log(title)
+    }
+    getName = function (title) {
+        console.log(this.title, 'student')
+    }
+}
+
+const str = new Student('student');
+
+class Department extends Student{
+    constructor(title) {
+        super(title)
+    }
+}
+
+const strr = new Department('Webbrain');
+strr.getName()
 
