@@ -182,24 +182,164 @@
 
 //class 
 
-class Student {
-    constructor(title) {
-        this.title = title;
-        console.log(title)
-    }
-    getName = function (title) {
-        console.log(this.title, 'student')
-    }
-}
+// class Student {
+//     constructor(title) {
+//         this.title = title;
+//         console.log(title)
+//     }
+//     getName = function (title) {
+//         console.log(this.title, 'student')
+//     }
+// }
 
-const str = new Student('student');
+// const str = new Student('student');
 
-class Department extends Student{
-    constructor(title) {
-        super(title)
-    }
-}
+// class Department extends Student{
+//     constructor(title) {
+//         super(title)
+//     }
+// }
 
-const strr = new Department('Webbrain');
-strr.getName()
+// const strr = new Department('Webbrain');
+// strr.getName()
+
+
+
+// const arr = [2, 4, 1, 6, 8, 3, 10];
+// const array = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 !== 0) {
+//         array.push(arr[i])
+//     }
+// }
+
+// console.log(array)
+
+
+
+
+// const obj = {
+//     name: 'JOhn',
+//     surname: 'Doe',
+//     status: 'student'
+// };
+
+// for (const key in obj) {
+//     console.log(obj[key])
+// }
+
+
+
+// function getData(arr, num) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i])
+//     }
+// }
+
+// var data = [
+//   {
+//     id: 1,
+//     name: 'Asad',
+//     status: 'Student',
+//     job: 'Architect'
+//   },
+//   {
+//     id: 1,
+//     name: 'Shavkat aka',
+//     surname: 'Samadov'
+//   }
+// ];
+
+// const findOccurance = () => {
+//   const array = data.map(value => {
+//    })
+// }
+
+// findOccurance()
+
+
+
+
+
+
+
+
+
+// // a = 0;
+// // const obj = Object.values(data[0]).toString()
+
+// // for (let i = 0; i < obj.length; i++) {
+// //   (obj[i] === 'a' || obj[i] === 'A') && a++;
+// // }
+
+// // console.log('a =', a);
+  
+
+  
+
+
+//GetMax function
+// const myFunc = (num1, num2) => {
+//   if (num1 > num2) {
+//     return num1
+//   } else  {
+//     return num2
+//   }
+// }
+
+// console.log(myFunc(5, 3))
+
+
+//getMax ternary version
+
+// const myFunc = (a, b) =>{
+//   return (a > b) ? a : b;
+// }
+
+// console.log(myFunc(5, 10))  => 10
+
+
+//finding IsLandscape
+
+// const isLandscape = (width, height) =>{
+//   return (width > height)
+// }
+
+// console.log(isLandscape(4, 5));  => false
+
+// FizzBuzz algoritmi
+
+
+// const fizzBuzz = (input) => {
+//   if (typeof input !== 'number') {
+//     return 'son emas'
+//   } else if (input % 3 === 0 && input % 5 === 0) { return 'FizzBuzz';
+//   } else if (input % 3 === 0) {
+//     return 'Fizz'
+//   } else if (input % 5 === 0) {
+//     return 'Buzz'
+//   } else {
+//     return input
+//   }
+// }
+
+// console.log(fizzBuzz(8));
+
+
+
+// const sum = (limit) => {
+//   let sum = 0;
+
+//   for (let i = 0; i < limit; i++) {
+//     if (i % 3 === 0 || i % 5 === 0) 
+//       sum+= i
+//   }
+
+//   return sum
+// }
+
+// console.log(sum(10))
+
+
 
