@@ -343,3 +343,274 @@
 
 
 
+// const car = {
+//   model: 'Toyota',
+//   make: 'Estime',
+//   year: 2016,
+//   price: 50000
+// }
+
+// function showProperties(obj) {
+//   for (let key in obj) {
+//     if (typeof obj[key] === 'number') {
+//       console.log(key, obj[key])
+//     }
+//   }
+// }
+
+// console.log(showProperties(car));
+
+
+
+/// Marks of the student
+
+
+//0-50: F
+//51-60: D
+//61-70: C
+//71-80: B
+//81- 100: A
+
+// const marks = [81, 74, 86, 59, 77];
+// console.log(calculateGrade(marks));
+
+// const calculateGrade = (marks) => {
+//   let avrg = calcAvarage(marks)
+//   if (marks > 0 && marks <= 50) {
+//     return 'F'
+//   } else if (marks > 50 && marks <= 60) {
+//     return 'D'
+//   } else if (marks > 60 && marks <= 70) {
+//     return 'C'
+//   } else if (marks > 70 && marks <= 80) {
+//     return 'B'
+//   } else if (marks > 80 && marks <= 100) {
+//     return 'A'
+//   } else {
+//     return 'You are older to study'
+//   }
+//   console.log(sum)
+// }
+
+
+// const calcAvarage = (array) => {
+//   let sum = 0;
+//   for (let value of array) {
+//     sum += value;
+//   }
+
+//   let avrg = sum / marks.length;
+
+//   return avrg
+// }
+
+// console.log(calculateGrade(101));
+
+
+// Prime Numbers
+
+
+// const showPrimeNumbers=(limit)=> {
+//   for (let i = 2; i <= limit; i++) {
+//     let isPrime = true;
+//     for (let j = 2; j < i; j++) {
+//       if (i % j === 0) {
+//         isPrime = false;
+//         break
+//       }
+//     }
+//      if (isPrime) console.log(i)
+//   }
+// }
+
+// showPrimeNumbers(100)
+
+
+
+//Objects
+
+
+const person = {
+  name: 'John',
+  surname: 'Doe',
+  age: 25,
+  id: 232323,
+  education: 'HIgh School',
+  sertifications: function () {
+      console.log('IELTS')
+    }
+  
+}
+
+// function Person(name, surname, age, id, education) {
+//   this.name = name;
+//   this.surname = surname;
+//   this.age = age;
+//   this.id = id;
+//   this.education = education;
+//   this.sertifications = function () {
+//     console.log('IELTS')
+//   }
+// }
+
+// const newP = new Person('John', 'Doe', 25, 232323, 'High school', );
+
+// console.log(newP);
+
+
+// SUM of triangle
+
+// var side1 = 5;
+// var side2 = 6;
+// var side3 = 7;
+// var s = (side1 + side2 + side3) / 2;
+// var area = Math.sqrt(s * ((s - side1) * (s - side2) * (s - side3)));
+// console.log(area);
+
+
+// creating date
+// var date = new Date();
+// console.log(date);
+
+
+// Leap year
+
+
+// const funcLeapYear = (year) => {
+//   return (year%100 ===0) ? (year %400===0) : (year%4 ===0)
+// }
+
+// console.log(funcLeapYear(2017))
+
+
+// Converting minutes into seconds
+
+// const minutes = (num) => {
+//    return num * 60
+// }
+
+// console.log(minutes(3));
+
+
+// Return the next number from the integer passed
+
+
+// const addition = (number) =>{
+//   return number+=1
+// }
+
+// console.log(addition(-2));
+
+
+
+// Area of triangle
+
+// const triArea = (a, b) => {
+//   return (a * b) / 2
+// }
+
+// console.log(triArea(3,2))
+
+
+// convert Age to days
+
+// const calcAge = (age) => {
+//   return age * 365;
+// }
+
+// console.log(calcAge(50));
+
+
+// Fix bug in the code
+
+// const cubes = (a)=> {
+//   return a ** 3
+// }
+
+// console.log(cubes(10));
+
+
+// first and last element of the array
+
+// const array = [2, 4, 1, 7, 19];
+
+// console.log(array[0]);
+// console.log(array[array.length-1]);
+
+
+// power calculator
+
+
+// const calc = (num1, num2) => {
+//   return num1 * num2
+// };
+
+// console.log(calc(10, 10));
+
+
+
+// Finding the max and min in array
+
+
+// const arrMin = (num1) => {
+//   return num1.reduce((p, v) =>{
+//     return (p < v ? p : v);
+//    })
+// }
+
+// const arrMax = (num1) => {
+//   return num1.reduce((p, v) => {
+//     return (p > v ? p : v);
+//   })
+// }
+
+
+// console.log(arrMax([1, 2, 3, 4, 5, 6]));
+
+
+
+// const arr = [22, 122, 1, 23, 4, 56];
+
+// //get highest
+// const highest = Math.max(...arr);
+
+// //get lowest
+// const lowest = Math.min(...arr);
+
+
+// console.log('Highest number: ' + highest);
+// console.log(`Lowest number: ${lowest}`);
+
+
+
+// function canNest(arr1, arr2) {
+//   return (
+//     Math.min(...arr1) > Math.min(...arr2) &&
+//     Math.max(...arr1) < Math.max(...arr2)
+//   );
+// }
+
+// console.log(canNest([1, 2, 3, 4], [0, 6]));=> true
+// console.log(canNest([9, 9, 8], [8, 9])); =>false
+
+// array sort
+
+// const onSort = (arr1, arr2) => {
+//   let concated = [arr1, ...arr2];
+//   let sorted = concated.sort((a, b) => {
+//     return a - b;
+//   })
+//   return sorted;
+// }
+
+// console.log(onSort([1, 10], [2, 3, 4, 5, 6, 7]))
+
+// merging two sorted arrays
+
+// var mergeTwoLists = function (list1, list2) {
+//   var concatenated = list1.concat(list2);
+//   var sorted = concatenated.sort((a, b) => a - b);
+//   return sorted;
+// };
+
+// console.log(mergeTwoLists([1, 2, 3], [4, 2, 3]));
