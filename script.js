@@ -614,3 +614,101 @@ const person = {
 // };
 
 // console.log(mergeTwoLists([1, 2, 3], [4, 2, 3]));
+
+
+// Finding the longest word in string
+
+// function findLongest(str) {
+//   var spl = str.split(' ');
+//   var longest = 0;
+
+//   for (var i = 0; i < spl.length; i++) {
+//     if (spl[i].length > longest) {
+//       longest = spl[i].length;
+//     }
+//   }
+//   return longest;
+// }
+
+// console.log(findLongest('The frog is jumping'));
+
+
+// correcting the mistakes of the character recognition software
+
+// const correct = (string) =>
+//   string.replace(/0/g, 'O').replace(/1/g, 'I').replace(/5/g, 'S');
+
+//   console.log(correct('L0ND0N'))  => LONDON
+
+
+
+// Reverse string
+
+// function reverseWords(str){
+//   arr = [];
+//   var words = str.split(' ');
+//   for (let i = words.length - 1; i >= 0; i--) {
+//     arr.push(words[i])
+//   }
+//   return arr.join(' ')
+// }
+
+// console.log(reverseWords('Hello world'));
+
+
+
+// var reversed = 'hello';
+// var res = reversed.split(' ').reverse().join(' ')
+
+// console.log(res);
+
+
+
+// function reverseString(str) {
+//   var splitString = str.split('');
+//   var reverseArray = splitString.reverse();
+//   var joinArray = reverseArray.join('');
+
+//   return joinArray;
+// }
+
+// console.log(reverseString('hello'));
+
+
+
+// With unshift
+
+// const reversed = (str) => {
+//   var arr = [];
+//   var string = str.split(' ');
+//   for (let i = 0; i < string.length; i++) {
+//     arr.unshift(string[i])
+//   }
+//   return arr.join(' ')
+// }
+
+// console.log(reversed('Hello world'))
+
+
+// function century(year) {
+//   return Math.ceil(year / 100);
+// }
+
+// console.log(century(1999))
+
+
+// power of two
+
+
+// function isPowerOfTwo(n) {
+//   if (n == 1) return true;
+//   if (n < 1) return false;
+
+//   return isPowerOfTwo(n / 2);
+// }
+
+// console.log(isPowerOfTwo(3))
+
+
+
+
